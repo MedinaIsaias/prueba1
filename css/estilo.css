@@ -91,6 +91,14 @@ h1 {
     text-align: center;
     
 }
+/* animacion*/
+.animate__animated.animate__bounce {
+    --animate-duration: 5s;
+  }
+  .animate__animated.animate__backInDown {
+    --animate-duration: 5s;
+    height: 500px;
+  }
 .main {
     color: blanchedalmond;
     display: grid;
