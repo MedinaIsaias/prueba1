@@ -1,0 +1,229 @@
+body {
+    background-size: cover;
+    font-family: Arial, Helvetica, sans-serif;
+    background-repeat: no-repeat;
+    background-image: url(../src/multimedia/imagenes/fondo.jpg);
+}
+
+
+
+header ul {
+    list-style: none;
+    display: flex;
+    margin: 4px;
+    text-align: right;
+
+}
+
+ul {
+    text-align: right;
+}
+
+li a {
+
+    margin: 4px;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+
+
+}
+
+/* logo de la empresa e inicio*/
+.logo {
+    width: 50px;
+}
+
+.k400 {
+    width: 400px;
+}
+
+
+.ico {
+    text-align: right;
+}
+
+/*redes solciales*/
+.red {
+    width: 30px;
+}
+
+.grid_container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.3fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "navbar"
+        "main"
+        "footer";
+
+}
+
+.nabvar {
+    grid-area: nabvar;
+}
+
+.footer {
+    color: rgb(255, 255, 255);
+    grid-area: footer;
+    text-align: center
+}
+.proyec {
+    color: blanchedalmond;
+    display: grid;
+    grid-template-columns:1fr;
+    grid-template-rows: 0.1fr 0.1fr 0.1fr;
+    gap: 7px 7px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "texto"
+        "rojo";
+    grid-area: main;
+
+}
+
+h1 {
+    color: aliceblue;
+    text-align: center;
+}
+.rojo{
+    text-align: center;
+    
+}
+.main {
+    color: blanchedalmond;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1.1fr 0.3fr 1.6fr;
+    gap: 7px 7px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "kawa1 kawa2"
+        "titulo1 titulo2"
+        "texto1 texto2";
+    grid-area: main;
+}
+.kawa1 {
+    grid-area: kawa1;
+    text-align: center;
+}
+
+.titulo1 {
+    text-align: center;
+    grid-area: titulo1;
+}
+
+.texto1 {
+    text-align: center;
+    grid-area: texto1;
+}
+
+.kawa2 {
+    grid-area: kawa2;
+    text-align: center;
+}
+
+.titulo2 {
+    text-align: center;
+    grid-area: titulo2;
+}
+
+.texto2 {
+    text-align: center;
+    grid-area: texto2;
+}
+
+/* responsive para celular*/
+@media (max-width: 480px) {
+   
+    header ul {
+        color: aliceblue;
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+    }
+    
+    .grid_container {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.2fr 1fr 0.2fr;
+        gap: 0px 0px;
+        grid-auto-flow: row;
+        grid-template-areas:
+            "navbar"
+            "main"
+            "main"
+            "main"
+            "main"
+            "main"
+            "main"
+            "footer";
+    }
+    
+    .navbar {
+        grid-area: navbar;
+    }
+    
+    .footer {
+        grid-area: footer;
+    }
+    
+    .main {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.2fr 0.2fr 0.2fr 0.2fr 0.2fr 0.2fr;
+        gap: 0px 21px;
+        grid-auto-flow: row;
+        grid-template-areas:
+            "kawa1"
+            "titulo1"
+            "texto1"
+            "kawa2"
+            "titulo2"
+            "texto2";
+        grid-area: main;
+    }
+    
+    .kawa1 {
+        grid-area: kawa1;
+        text-align: center;
+    }
+    
+    .titulo1 {
+        font-size: 0.3cm;
+        text-align: center;
+        grid-area: titulo1;
+    }
+    
+    .texto1 {
+        font-size: 0.2cm;
+        font-size: 0.3cm;
+        text-align: center;
+        grid-area: texto1;
+    }
+    
+    .kawa2 {
+        grid-area: kawa2;
+        text-align: center;
+    }
+    
+    .titulo2 {
+        font-size: 0.3cm;
+        text-align: center;
+        grid-area: titulo2;
+    }
+    
+    .texto2 {
+        font-size: 0.2cm;
+        text-align: center;
+        grid-area: texto2;
+    }
+    
+    .k400 {
+        padding-top: 20px;
+        height: 100px;
+        width: 200px;
+    }
+}
+
